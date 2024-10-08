@@ -1,0 +1,11 @@
+<!-- accountContactWrapper.html -->
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="6">
+            <c-account-list onaccountselected={handleAccountSelected}></c-account-list>
+        </lightning-layout-item>
+        <lightning-layout-item size="6">
+            <c-contact-list account-id={selectedAccountId}></c-contact-list>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
